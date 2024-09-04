@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="imagens/LOGO.png">
+    <link rel="icon" type="image/x-icon" href="cadastro/favicon.ico"> <!-- Corrija o href -->
+    <script src="cadastro.js" defer></script> <!-- Adicione o defer para garantir que o script seja executado após o carregamento do DOM -->
+    <title>Cadastro Usuário</title>
+</head>
+<body>
+    <section class="container">
+
+        <img class="logomarca" src="imagens/LOGOMARCA.png">
+
+        <h1>Cadastro</h1>
+
+        <div class="informacoes">
+
+            <div class="formatacao">
+                <label id = "labelName"class="informacoesTexto">Nome Completo:</label><br>
+                <input class="informacoesInput" type="text" id="name"><br>
+            </div>
+                
+            <div class="formatacao1">
+                <label id="labelEmail" class="informacoesTexto">Email:</label><br>
+                <input class="informacoesInput" type="email" id="email"><br>
+            </div>
+
+            <div class="formatacao2">
+                <label id="labelPassword" class="informacoesTexto">Senha:</label><br>
+                <input class="informacoesInput" type="password" id="password"><br>
+            </div>
+
+            <div class="formatacao3">
+                <label id="labelPasswordConfirm" class="informacoesTexto">Confirme a senha:</label><br>
+                <input class="informacoesInput" type="password" id="passwordConfirmation"><br>
+            </div>
+
+            
+        </div>
+        
+        <input type="checkbox" id="Termos" name="Termos" value="TermosAceito">
+        <label class="LerTermos"> <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Termos de Serviço </a> </label>
+        <br>
+        
+        <div class="registerButton">
+            <div class="cadastroButton">
+                <button type="button" onclick="Registro()">Cadastro</button><br>
+            </div>
+
+            <label style="color: grey;">—————— ou ——————</label>
+
+            <div class="loginAlt">
+                
+                <div class="Google">
+                    <img src="imagens/logo google.png" alt="Logo Google">
+                    <button type="button">Login com Google</button>
+                </div>
+
+                <div class="Facebook">
+                    <img src="imagens/logo Facebook.png" alt="Logo Facebook">
+                    <button type="button">Login com Facebook</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
