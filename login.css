@@ -8,6 +8,7 @@ body {
     font-family: Arial;
     margin: 80px;
     text-align: center;
+    align-items: center;
     align-content: center;
     background-image: url("imagens/BG_CADASTRO.png");
     background-size: 100%;
@@ -19,7 +20,7 @@ body {
     background-color: #ffffff;
     color: #000000;
     width: 40%;
-    height: 520px;
+    height: auto;
     margin: auto;
 }
 
@@ -36,7 +37,7 @@ button {
 }
 
 .registerButton {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -76,41 +77,6 @@ button {
 
 }
 
-.Google img,
-.Facebook img {
-    width: 13px;
-    height: 13px;
-}
-
-.Google,
-.Facebook {
-    max-width: 200px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    margin: 1%;
-    padding: 2%;
-    border: 2px solid transparent;
-    border-radius: 20px;
-}
-
-
-.Google:hover,
-.Facebook:hover {
-    border: 2px solid #ff8400;
-    border-radius: 20px;
-}
-
-.loginAlt {
-    display: flex;
-    padding-left: 4%;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-}
 
 .cadastroButton {
     border: 2px solid #ff8400;
@@ -128,13 +94,6 @@ button {
     background-color: #d9d9d9;
 }
 
-.LerTermos {
-    color: #000000;
-    font-size: 15px;
-
-    padding: 5px;
-}
-
 a {
     color: #8000cf;
     text-decoration: underline;
@@ -145,5 +104,26 @@ a:hover {
     color: #ff8400;
 }
 
+.formatacao1{
+    margin-top: 20px;
+}
 
+.formatacao2{
+    margin-top: 20px;
+}
+
+.formatacao3{
+    margin-top: 20px;
+}
 /* Funções */
+
+.textoDoCadastro{
+    margin-top: 20px;
+}
+.lembrarDados{
+    font-size: 13px;
+}
+.forgotPassword{
+    color: #8000cf;
+    font-size: 13px;
+}
