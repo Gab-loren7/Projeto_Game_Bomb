@@ -96,7 +96,7 @@ function Registro() {
         localStorage.setItem("userData", JSON.stringify(userData));
     
         //Passar para a tela inicial
-        window.location.href = "paginaInicial.html"
+        window.location.href = "/PaginaInicial/paginaInicial.html"
     
         alert("Login concluído com sucesso! :-)")
         
@@ -116,14 +116,11 @@ function Registro() {
         let loginEmail = document.getElementById('loginEmail').value;
         let loginPassword = document.getElementById('loginPassword').value; 
 
-        console.log(`${registerEmail} && ${loginEmail} | ${registerPassword} && ${loginPassword}`)
-
-
-
+        // console.log(`${registerEmail} && ${loginEmail} | ${registerPassword} && ${loginPassword}`)
 
         if (loginEmail == registerEmail && loginPassword == registerPassword){
             alert("Login Bem-Sucedido!")
-            window.location.href = "paginaInicial.html"
+            window.location.href = "/PaginaInicial/paginaInicial.html"
         }
     
         else {
@@ -132,19 +129,24 @@ function Registro() {
     }
 
     function irCadastro(){
-        window.location.href = "cadastro.html"
+        window.location.href = "/Cadastro/cadastro.html"
     }
 
 // Pag Inicial
 
+function botaoEntrar(){
+    window.location.href = "../Login/login.html"
+}
 
+//ADM
+function returnPaginaInicial() {
+    window.location.href = "../../PaginaInicial/paginaInicial.html"
+}
 
+function irParaTelaDeCadastroDoProduto(){
+    window.location.href = "../TelaCadastroProduto/telaDeCadastroDoProduto.html"
+}
 
-
-
-
-
-
-
-
-// https://meet.google.com/rzv-doaj-hfx
+function irParaLogin(){
+    window.location.href = "../Login/login.html"
+}
