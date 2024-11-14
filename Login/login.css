@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: IstokWeb;
-    src: url(../../fonts/IstokWeb-Bold.ttf);
+    src: url(../fonts/IstokWeb-Bold.ttf);
 }
 
 @font-face{
@@ -15,12 +15,11 @@
 }
 
 body{
-    background-image: url(../../Imagens/Base-formato-site-adm.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1550px;
+    display: flex;
+}
 
-    height: 695px;
+img{
+    width:54%;
 }
 
 .container{
@@ -31,9 +30,8 @@ body{
     align-items: center;
     justify-content: center;
 
-    margin-left: 50%;
     width: 50%;
-    height: 100%;
+    
     padding: 10px;
 }
 
