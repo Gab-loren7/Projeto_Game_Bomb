@@ -9,17 +9,23 @@
     src: url(../../fonts/IstokWeb-Bold.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: Imprima;
     src: url(../../fonts/Imprima-Regular.ttf);
 }
-
 body{
     display: flex;
+    overflow-y: hidden;
 }
 
 img{
-    width:54%;
+    width: 100%;
+    min-height: 100%;
+}
+
+.imagem{
+    width:50%;
+    max-height: 100%;
 }
 
 .container{
@@ -31,6 +37,7 @@ img{
     justify-content: center;
 
     width: 50%;
+    height: 740px;
     
     padding: 10px;
 }
@@ -54,23 +61,23 @@ img{
     font-size: 36px;
 }
 
-header{
+header {
     margin-bottom: 30px;
 }
 
-h1{
+h1 {
     color: #8000cf;
     font-family: IstokWeb;
     font-size: 36px;
 }
 
-p{
+p {
     font-family: Imprima;
     font-size: 16px;
 }
 
 
-input{
+input {
     display: block;
     margin: 15px 0px;
 
@@ -85,7 +92,7 @@ input{
 
 }
 
-.botaoEntrar{
+.botaoEntrar {
     cursor: pointer;
 
     display: block;
@@ -98,16 +105,16 @@ input{
     color: #f1f1f1;
     border: 3px solid #fc8400;
     border-radius: 20px;
-    
+
     font-family: IstokWeb;
     font-size: 18px;
     font-weight: 600;
     transition: .5s;
-    
+
 }
 
-.botaoEntrar:hover{
+.botaoEntrar:hover {
     background-color: #fc8400;
     border: 3px solid #8000cf;
-    
+
 }

@@ -16,10 +16,17 @@
 
 body{
     display: flex;
+    overflow-y: hidden;
 }
 
 img{
-    width:54%;
+    width: 100%;
+    min-height: 100%;
+}
+
+.imagem{
+    width:50%;
+    max-height: 100%;
 }
 
 .container{
@@ -31,6 +38,7 @@ img{
     justify-content: center;
 
     width: 50%;
+    height: 740px;
     
     padding: 10px;
 }
