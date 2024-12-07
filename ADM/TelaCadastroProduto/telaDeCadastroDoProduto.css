@@ -16,116 +16,78 @@
 /* Altura do site */
 body {
     height: 2000px;
-
+    background-color: #F2F2F2;
 }
 
 /* Cabeçario laranja */
 .Orange-navbar {
-    /* border: 2px solid red; */
     display: flex;
     width: 100%;
     height: 5%;
     padding: 10px 0;
-    background-color: #ff8400;
+    background-color: #ff8500;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-.box-logoMarca {
-    /* border: 2px solid red; */
-    display: flex;
-    height: 100%;
-    width: 33%;
-    margin: 0px 10px 0px 10px;
-
-}
-
-/* Imagem da logo que fica no canto esquerdo */
-.logoMarca {
-    /* border: 2px solid red; */
-
-    cursor: pointer;
-
-    width: 70%;
-    max-width: 190px;
-
-    text-align: center;
-    align-items: center;
-    margin: auto;
-
-}
-
+.box-logoMarca,
 .box-search,
 .Perfil-Carrinho {
-
     display: inline-block;
     height: 100%;
     width: 33%;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
+}
 
-    /* border: 2px solid red; */
+.logoMarca {
+    cursor: pointer;
+    width: 70%;
+    max-width: 190px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
 
 /* Pesquisa */
 .search {
-font-family: Imprima;
-
+    font-family: Imprima;
     margin-top: 30px;
-
     width: 100%;
     height: 40px;
     padding: 3%;
-
-    /* border: 2px solid red; */
     border-radius: 8px;
-
-
 }
 
-/* Logo que fica do lado da Search */
 .logoInvertida {
     cursor: pointer;
-
     width: 70px;
     max-width: 50%;
-
     margin-top: -73px;
     margin-left: 90%;
-
 }
 
 .space-profile {
-    /* border: 2px solid red; */
-
     display: flow-root;
     text-align: center;
     align-items: center;
     margin: auto;
-
     width: 70%;
     height: 80%;
     margin-right: 25%;
-
     margin-top: 2%;
 }
 
-.profile {
+.profile,
+.cart {
     width: 100%;
     max-width: 60px;
     height: 10%;
     max-height: 50px;
-
     margin-top: 15px;
 }
 
 .cart {
-    width: 100%;
-    max-width: 60px;
-    height: 50px;
-    max-height: 50px;
-
     margin-left: 70%;
-    margin-top: 15px;
 }
 
 /* Cabeçario preto */
@@ -248,4 +210,116 @@ a:hover {
 hr {
     margin-top: 5px;
     border: 1px groove #8000cf;
+}
+
+.container{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    display: flex;
+/* 
+    border: 5px solid #ff8400; */
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 9%;
+    margin-top: 2%;
+}
+
+.space{
+    /* border: 5px solid #ff8400; */
+    width: 50%;
+    height: 100%;
+    margin-top: -5%;
+    /* width: 50%;
+    margin-right: 50%; */
+}
+
+.espacamento{
+    border: 2px solid #ff8400;
+    height: 500px;
+}
+
+.textos{
+    margin-left: 2%;
+}
+
+.item1, .item2, .item3, .item4, .item5, .botao{
+    border: 2px solid #8000cf;
+    margin: 2%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.item1{
+    width: 50%;
+}
+
+.item2{
+    width: 22%;
+}
+
+.item3{
+    width: 50%;
+}
+
+.item4{
+    width: 50%;
+}
+
+.item5{
+    width: 22%;
+}
+
+.itens3{
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.botao{
+    background-color: #ff8400;
+    border: 2px solid #8000cf;
+    color: white;
+    transition: .5s;
+    width: 50%;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: #8000cf;
+    border: 2px solid #ff8400;
+    color: white;
+}
+
+.onde-ficara-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+}
+
+
+.espacamento, .space2{
+    margin: 1%;
+}
+
+.space2{
+    /* border: 5px solid #ff8400; */
+    display: flex;
+    text-align: justify;
+    width: 50%;
+    height: 100%;
+}
+
+.inputProdutos{
+    margin: 2%;
+}
+
+.imagemProdutos{
+    margin: auto;
+    height: 40px;
+    width: 10px;
 }

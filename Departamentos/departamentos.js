@@ -1,84 +1,6 @@
 function returnPaginaInicial() {
-    window.location.href = "../../PaginaInicial/paginaInicial.html"
+    window.location.href = "../PaginaInicial/paginaInicial.html";
 }
-
-function irParaLogin(){
-    window.location.href = "../Login/login.html"
-}
-
-    // Lógica para abrir o botão
-    const openButtons = document.querySelectorAll('.profileButton')
-
-    openButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modalId = button.getAttribute('data-modal')
-            const modal = document.getElementById(modalId)
-
-            modal.showModal();
-        });
-    });
-
-    // Lógica para fechar o botão
-    const closeButtons = document.querySelectorAll('.close-modal');
-
-    closeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modalId = button.getAttribute('data-modal');
-            const modal = document.getElementById(modalId);
-
-            modal.close();
-        });
-    });
-
-    
-
-
-    const scrollContent = document.getElementById('scroll-content');
-    const scrollContent1 = document.getElementById('scroll-content1');
-    const scrollContent2 = document.getElementById('scroll-content2');
-
-
-function leftaaa() {
-    scrollContent.scrollBy({ left: -150, behavior: 'smooth' });
-  }
-
-function rightbbb() {
-    scrollContent.scrollBy({ left: 150, behavior: 'smooth' });
-}
-
-function leftccc() {
-    scrollContent1.scrollBy({ left: -150, behavior: 'smooth' });
-  }
-
-function rightddd() {
-    scrollContent1.scrollBy({ left: 150, behavior: 'smooth' });
-}
-  
-function lefteee() {
-    scrollContent2.scrollBy({ left: -150, behavior: 'smooth' });
-  }
-
-function rightfff() {
-    scrollContent2.scrollBy({ left: 150, behavior: 'smooth' });
-}
-  
-
-const campo = document.querySelector("#campo")
-
-document.addEventListener('keydown', function(event) {
-    // Verifica se a tecla pressionada é "G" (case insensitive)
-    if (event.key.toLowerCase() === 'g') {
-        // Foca no input
-        campo.focus();
-    }
-});
-
-// Apaga o texto do input de pesquisa
-function apagarTextoPesquisa(){
-    const campo = document.querySelector("#campo")
-    campo.value = ""
-}
-
 
 // Função para exibir produtos cadastrados na página inicial como cards
 function exibirProduto() {
@@ -100,8 +22,9 @@ function exibirProduto() {
         nome.textContent = produto.nome;
         nome.classList.add('textoDosProdutos');
 
+
         const preco = document.createElement('p');
-        preco.innerHTML = `<strong style="color: #1ABB00;"> R$ ${produto.preco}</strong> no Pix`; 
+        preco.innerHTML = `<strong style="color: #1ABB00;"> R$ ${produto.preco}</strong><strong> no Pix</strong>`; 
         preco.classList.add('precoProdutos');
 
         const addToCartBtn = document.createElement('button');
@@ -121,6 +44,7 @@ function exibirProduto() {
 // Função para adicionar produto ao carrinho
 function adicionarAoCarrinho(produto) {
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    alert('Produto adicionado ao carrinho')
     carrinho.push(produto);
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
@@ -128,6 +52,7 @@ function adicionarAoCarrinho(produto) {
     exibirCarrinho();
 }
 
+// Função para exibir o carrinho de compras
 // Função para exibir o carrinho de compras
 function exibirCarrinho() {
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
@@ -148,6 +73,10 @@ function exibirCarrinho() {
         nome.textContent = produto.nome;
         nome.classList.add('carinNome');
 
+        // Crie uma nova div para englobar preco e lixo
+        const divPrecoLixo = document.createElement('div');
+        divPrecoLixo.classList.add('precoLixoContainer'); // Adicione uma classe se necessário
+
         const preco = document.createElement('p');
         preco.innerHTML = `<strong style="color: #1ABB00;"> R$ ${produto.preco}</strong> no Pix`; 
         preco.classList.add('carinPreco');
@@ -167,10 +96,13 @@ function exibirCarrinho() {
             deletarProdutoCarrinho(index);
         });
 
+        // Adicione preco e lixo à nova div
+        divPrecoLixo.appendChild(preco);
+        divPrecoLixo.appendChild(lixo);
+
         li.appendChild(img);
         li.appendChild(nome);
-        li.appendChild(preco);
-        li.appendChild(lixo);
+        li.appendChild(divPrecoLixo); // Adicione a nova div ao li
 
         produtoCarrinho.appendChild(li);
     });

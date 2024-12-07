@@ -1,17 +1,27 @@
 function loginAdm(){
-    let businessCode = 69
+    const businessCode = "gamebomb2024"
+    const businessPassword = "empresagamebomb"
+    const businessEmail = "empresa@gmail.com"
+    
 
-    let userCode = document.getElementById('code')
-    let userEmail = document.getElementById('email')
-    let userPassword = document.getElementById('password')
-    let userPasswordConfirm = document.getElementById('passwordConfirm')
+    let userCode = document.getElementById('code').value
+    let userPassword = document.getElementById('password').value
+    let userEmail = document.getElementById('email').value
 
-    if (userCode == businessCode && userPassword === userPasswordConfirm && userEmail.value){
 
+    if (userCode == businessCode && userPassword == businessPassword && userEmail == businessEmail){
+
+        alert("Acesso permitido!")
         window.location.href = "../TelaCadastroProduto/telaDeCadastroDoProduto.html"
-            // arrumar dps, tá dando erro
     }
 
+    else if(userCode === "" || userEmail === "" || userPassword === ""){
+        alert("Preencha todos os campos!")
+    }
+    
+    else if(userCode !== businessCode){
+        alert("Código da empresa incorreto!")
+    }
 }
 
 function returnPaginaInicial() {

@@ -11,22 +11,24 @@
 
 @font-face{
     font-family: Imprima;
-    src: url(../../fonts/Imprima-Regular.ttf);
+    src: url(../fonts/Imprima-Regular.ttf);
 }
 
 body{
     display: flex;
     overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
 img{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 .imagem{
     width:50%;
-    max-height: 100%;
+    height: 100%;
 }
 
 .container{
@@ -38,7 +40,7 @@ img{
     justify-content: center;
 
     width: 50%;
-    height: 740px;
+    height: 100%;
     
     padding: 10px;
 }
@@ -118,4 +120,18 @@ input{
     background-color: #fc8400;
     border: 3px solid #8000cf;
     
+}
+
+.textoCadastro{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.corCadastro{
+    color: #8000cf;
+    transition: .5s;
+}
+
+.corCadastro:hover{
+    color: #fc8400;
 }
