@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: IstokWeb;
+    src: url(../../fonts/IstokWeb-Bold.ttf);
+}
+
+@font-face{
+    font-family: Imprima;
+    src: url(../../fonts/Imprima-Regular.ttf);
+}
+
+body{
+    display: flex;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.imagem{
+    width:50%;
+    height: 100%;
+}
+
+.container{
+    background-color: #f1f1f1;
+    /* border: 2px solid red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100%;
+    
+    padding: 10px;
+}
+
+.conteudo{
+    /* border: 2px solid red; */
+
+    width: 60%;
+}
+
+.close {
+    cursor: pointer;
+
+    margin-left: 100%;
+    margin-bottom: 20px;
+
+    background-color: transparent;
+    color: #8000cf;
+    border: none;
+
+    font-size: 36px;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #8000cf;
+    font-family: IstokWeb;
+    font-size: 36px;
+}
+
+p{
+    font-family: Imprima;
+    font-size: 16px;
+}
+
+
+input{
+    display: block;
+    margin: 15px 0px;
+
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+
+    border: 3px solid #fc8400;
+    border-radius: 20px;
+
+    font-family: Imprima;
+
+}
+
+.botaoEntrar{
+    cursor: pointer;
+
+    display: block;
+    margin-top: 30px;
+
+    height: 60px;
+    width: 100%;
+
+    background-color: #8000cf;
+    color: #f1f1f1;
+    border: 3px solid #fc8400;
+    border-radius: 20px;
+    
+    font-family: IstokWeb;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+    
+}
+
+.botaoEntrar:hover{
+    background-color: #fc8400;
+    border: 3px solid #8000cf;
+    
+}

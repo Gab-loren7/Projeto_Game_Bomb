@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+}
+
+/* Font - Imprima */
+@font-face {
+    font-family: IstokWeb;
+    src: url(../fonts/IstokWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: Imprima;
+    src: url(../fonts/Imprima-Regular.ttf);
+}
+
+/* Altura do site */
+body {
+    height: 2000px;
+}
+
+/* Cabeçario laranja */
+.Orange-navbar {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    padding: 10px 0;
+    background-color: #ff8500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box-logoMarca,
+.box-search,
+.Perfil-Carrinho {
+    /* border: 2px solid red; */
+    display: inline-block;
+    height: 100%;
+    width: 33%;
+    margin: 0px 10px;
+}
+
+.logoMarca {
+    cursor: pointer;
+    width: 70%;
+    max-width: 190px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Pesquisa */
+.search {
+    font-family: Imprima;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    padding: 3%;
+    border-radius: 8px;
+}
+
+.logoInvertida {
+    cursor: pointer;
+    width: 70px;
+    max-width: 50%;
+    margin-top: -73px;
+    margin-left: 90%;
+}
+
+.space-profile {
+    display: flow-root;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+.profile,
+.cart {
+    width: 100%;
+    max-width: 60px;
+    height: 10%;
+    max-height: 50px;
+    margin-top: 15px;
+}
+
+.cart {
+    margin-left: 70%;
+}
+
+/* Cabeçario preto */
+.Black-navbar {
+    font-family: IstokWeb;
+    background-color: black;
+    max-width: 100%;
+    height: 2.8%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Black-navbar button {
+    margin-top: 3%;
+    margin: 18px;
+    border: none;
+    background-color: transparent;
+}
+
+.Black-navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.Black-navbar a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Banner do site */
+.bannerDoSite {
+    width: 100%;
+}
+
+/* Faixas da página inicial */
+.maisProcurados,
+.consoles,
+.jogos {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+/* Formatação dos Jogos/Produtos */
+.spaceProdutos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.imagemProdutos {
+    width: 90%;
+    height: 50%;
+}
+
+.textoDosProdutos {
+    font-family: IstokWeb;
+    height: 17%;
+    margin-top: 3.8%;
+    margin-bottom: 20%;
+}
+
+.botaoProdutos {
+    cursor: pointer;
+    font-weight: 600;
+    font-family: IstokWeb;
+    color: white;
+    background-color: #8000cf;
+    border: 3px solid #ff8500;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 98%;
+    transition: .5s;
+}
+
+.botaoProdutos:hover {
+    background-color: #ff8500;
+    border: 3px solid #8000cf;
+}
+
+/* Departamentos */
+.imagemDepartamento {
+    width: 44%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.imagemDosDepartamentos {
+    width: 80%;
+    height: 550px;
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.imagemDosDepartamentos img {
+    cursor: pointer;
+    width: 30%;
+    margin: 0px 0px 20px 20px;
+    transition: .5s;
+}
+
+.imagemDosDepartamentos img:hover {
+    opacity: 75%;
+}
+
+/* Conteudo Modal */
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.modal-1,
+.modal-2 {
+    margin-top: 6%;
+    border: 3px solid #ff8500;
+    border-radius: 20px;
+    bottom: 50%;
+}
+
+
+.modal-1 {
+    bottom: 50%;
+    left: 70%;
+}
+
+.modal-2 {
+    left: 73.5%;
+    width: 20%;
+}
+
+.alinhar-conteudo {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.close-modal {
+    cursor: pointer;
+    margin-left: 92%;
+    background-color: transparent;
+    color: #8000cf;
+    border: none;
+    font-size: 18px;
+}
+
+.open-cadastro {
+    cursor: pointer;
+    font-family: IstokWeb;
+    font-weight: 600;
+    background-color: #8000cf;
+    border: 3px solid #ff8500;
+    border-radius: 20px;
+    color: white;
+    margin-top: 4%;
+    padding: 3% 6%;
+    transition: .5s;
+}
+
+.open-cadastro:hover {
+    background-color: #ff8500;
+    border: 3px solid #8000cf;
+}
+
+h1 {
+    font-family: IstokWeb;
+    margin-top: 4%;
+    font-size: 16px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #8000cf;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 5px;
+    border: 1px groove #8000cf;
+}
+
+/* Scroll Container */
+.scroll-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-content {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Item */
+.item {
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    margin-top: 6%;
+    height: 380px;
+    width: 13%;
+    min-width: 150px;
+    border: 5px solid #ff8500;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 4%;
+    padding-top: 2.2%;
+}
+
+/* Preço dos Jogos/Produtos */
+.precoProdutos {
+    text-align: center;
+    margin: auto;
+    margin-top: 15%;
+    font-family: Imprima;
+    width: 150px;
+}
+
+/* Scroll Button */
+.scroll-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #8000cf;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: #ff8500;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.scroll-btn:hover {
+    background-color: #ff8500;
+    border-color: #8000cf;
+}
+
+/* Scroll Button Positioning */
+.left {
+    position: absolute;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}

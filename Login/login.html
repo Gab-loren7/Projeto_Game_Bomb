@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Imagens/LOGO.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <!-- Adicione o defer para garantir que o script seja executado após o carregamento do DOM -->
+    <title>Login de Usuário</title>
+</head>
+
+<body>
+    <div class="imagem">
+        <img src="../Imagens/Imagem-Tela-Login.png" alt="Imagem do Login">
+    </div>
+    
+    <div class="container">
+        <div class="conteudo">
+            <button class="close" onclick="returnPaginaInicial()"><strong>&times;</strong></button>
+
+            <header>
+                <h1>Seja Bem-Vindo de Volta!</h1>
+                <p>Preencha os campos abaixo para entra em sua conta</p>
+            </header>
+
+            <input type="email" placeholder="Email" id="loginEmail" >
+            <input type="password" placeholder="Senha" id="loginPassword" >
+
+            <button onclick="Login()" class="botaoEntrar">ENTRAR</button>
+
+            <p class="textoCadastro">Cliente novo? <a href="../Cadastro/cadastro.html" class="corCadastro">Cadastrar-se</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

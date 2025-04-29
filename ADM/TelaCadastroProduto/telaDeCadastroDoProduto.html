@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telaDeCadastroDoProduto.css">
+    <link rel="shortcut icon" href="../../Imagens/LOGO.png" type="image/x-icon">
+    <script src="telaDeCadastroDoProduto.js" defer></script>
+    <title>Cadastro de Produto</title>
+</head>
+<body>
+    <header class="Orange-navbar">
+        <div class="box-logoMarca">
+            <img class="logoMarca" onclick="returnPaginaInicial()" src="../../Imagens/LOGOMARCA.png" alt="logomarca">
+        </div>
+
+        <div class="box-search">
+            <input class="search" placeholder="Aperte o G e busque aqui!" type="search">
+            <img class="logoInvertida" src="../../Imagens/LOGO INVERTIDA.png" alt="Pesquisa">
+        </div>
+
+        <!-- Perfil e Carrinho -->
+        <div class="Perfil-Carrinho">
+            <div class="space-profile">
+
+                <!-- Modal -->
+                <button class="profileButton" style="background: none; padding: 0; cursor: pointer;  border: none;" data-modal="modal-1">
+
+                    <!-- Imagem do Perfil -->
+                    <img class="profile" src="../../Imagens/ICON PROFILE.png" alt="Perfil">
+
+                </button>
+                
+                <button class="profileButton" style="background: none; padding: 0; cursor: pointer;  border: none;" data-modal="modal-2">
+                
+                <!-- Imagem do Carrinho -->
+                <img class="cart" src="../../Imagens/ICON CART.png" alt="carrinho">
+            </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="Black-navbar">
+        <button><a href="../../departamentos/departamentoPS.html">PLAYSTATION</a></button>
+        <button><a href="../../departamentos/departamentoNintendo.html">NINTENDO</a></button>
+        <button><a href="../../departamentos/departamentoXbox.html">XBOX</a></button>
+        <button><a href="../../departamentos/departamentoJogos.html">JOGOS</a></button>
+        <button><a href="../../departamentos/departamentoPerifericos.html">PERIFÉRICOS</a></button>
+        <button><a href="../../departamentos/departamentoNovidades.html">NOVIDADES</a></button>
+    </div>
+
+    <div class="container">
+        <div class="space">
+            <div class="textos">
+                <h2 class="textao">Cadastrar Produtos: </h2>
+                <h1 class="textinhoBasicos">Dados Basicos:</h1>
+            </div>
+            <br>
+            <div class="itens">
+                <input class="item1" type="text" id="nome" placeholder="Nome do Produto" required>
+                <input class="item2" type="number" id="preco" placeholder="Preço" required>
+                <div class="itens2">
+                    <input  class="item4" type="text" id="descricao" placeholder="Descrição do Produto" required>
+                    <input class="item5" type="text" type="text" id="novoeUsado" placeholder="Novo ou Usado">
+                </div>
+            </div>
+            <div class="itensBaixo">
+                <div class="lado-direito">
+                    <div class="onde-ficara-imagem" id="imagem-previsao"> 
+                        <span>Imagem ficará aqui</span>
+                    </div>
+                <div class="itens3">
+                    <input class="item3" type="text" id="urlImage" placeholder="Url da Imagem">
+                    <button class="botao" type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="espacamento">
+        
+    </div>
+    <div class="space2">
+        <div class="inputProdutos">
+            <h2 class="textoProdutosCadastrados">Produtos Cadastrados</h2>
+            <button onclick="limparProdutos()">Limpar lista</button>
+            <ul class="listaProdutos" id="listaProdutos"></ul>
+        </div>
+        
+    </div>
+</div>
+    
+ 
+    
+    <!-- Modal do Perfil -->
+    <dialog id="modal-1" class="modal-1">
+        <div class="alinhar-conteudo">
+            <button class="close-modal" data-modal="modal-1"><strong style="font-size: 24px;">&times;</strong></button>
+            <h1>Já possui cadastro?</h1>
+            <h1>Acesse sua conta</h1>
+    
+            <button href="../" class="open-cadastro"><strong>ENTRAR</strong></button>
+    
+            <h1>cliente novo? <a href="../../Cadastro/cadastro.html">cadastrar</a></h1>
+            <h1>entrar como <a href="../../ADM/LoginAdm/loginAdm.html">administrador</a></h1>
+        </div>
+    </dialog>
+    
+    <!-- Modal do Carrinho -->
+    <dialog id="modal-2" class="modal-2">
+        <div class="alinhar-conteudo">
+            <button class="close-modal" data-modal="modal-2"><strong style="font-size: 24px;">&times;</strong></button>
+            <h1>MEU CARRINHO</h1>
+            <hr>
+            <h1 style="margin-top: 20px;">Seu carrinho está vazio!</h1>
+        </div>
+    </dialog>
+    
+</body>
+</html>

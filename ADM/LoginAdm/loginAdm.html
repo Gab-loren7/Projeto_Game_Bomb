@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginAdm.css">
+    <link rel="shortcut icon" href="../../Imagens/LOGO.png" type="image/x-icon">
+    <script src="loginAdm.js" defer></script>
+    <title>Login de Administrador</title>
+</head>
+
+<body>
+    <div class="imagem">
+        <img src="../../Imagens/Imagem-Tela-Adm.png" alt="">
+    </div>
+    
+    <div class="container">
+        <div class="conteudo">
+            <button class="close" onclick="returnPaginaInicial()"><strong>&times;</strong></button>
+
+
+            <header>
+                <h1>Administrador</h1>
+                <p>Preencha os campos abaixo para acessar</p>
+            </header>
+
+            <input type="password"  placeholder="Código da Empresa" id="code">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Senha" id="password">
+
+            <button onclick="loginAdm()" class="botaoEntrar">ENTRAR</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

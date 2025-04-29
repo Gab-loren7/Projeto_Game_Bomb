@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="../Imagens/LOGO.png">
+    <link rel="icon" type="image/x-icon" href="../Imagens/LOGO.png">
+    <!-- Adicione o defer para garantir que o script seja executado após o carregamento do DOM -->
+    <script src="cadastro.js" defer></script>
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+    <div class="imagem">
+        <img src="../Imagens/Imagem-Tela-Cadastro.png" alt="">
+    </div>
+    
+    <div class="container">
+        <div class="conteudo">
+            <button class="close" onclick="returnPaginaInicial()"><strong>&times;</strong></button>
+            
+            
+            <header>
+                <h1>Seja Bem-Vindo!</h1>
+                <p>Preencha os campos abaixo para cadastrar-se</p>
+            </header>
+            
+            <input type="text"  placeholder="Nome de Usuário" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Senha" id="password">
+            <input type="password" placeholder="Confirmar Senha" id="passwordConfirm">
+            
+            <button onclick="Cadastrar()" class="botaoEntrar">CADASTRAR</button>
+            
+            <p class="textoLogin">Já possui uma conta? <a href="../Login/login.html" class="corLogin">Entrar</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
